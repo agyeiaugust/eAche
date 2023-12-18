@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $.ajax({
+                type:'POST',
+                url:'../sanisa/contain/apply.php',
+                success:function(html)
+                {
+                	//console.log(html);
+                    $('#con_display').html(html);
+                }
+            });    
+});
